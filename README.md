@@ -6,7 +6,7 @@ pattern (e.g. image/jpeg matches image/jpeg OR image/*).
 
 [![NPM](https://nodei.co/npm/mime-match.png)](https://nodei.co/npm/mime-match/)
 
-[![Build Status](https://img.shields.io/travis/DamonOehlman/mime-match.svg?branch=master)](https://travis-ci.org/DamonOehlman/mime-match) 
+[![Build Status](https://img.shields.io/travis/DamonOehlman/mime-match.svg?branch=master)](https://travis-ci.org/DamonOehlman/mime-match)
 
 ## Example Usage
 
@@ -25,6 +25,9 @@ console.log(match('image/jpeg', 'image/*'));
 console.log(['application/*', 'image/*'].filter(match('image/jpeg')));
 // --> ['image/*']
 
+// charset suffix is ignored
+console.log(match('application/json', 'application/json; charset=utf-8'));
+// --> true
 ```
 
 ## License(s)
