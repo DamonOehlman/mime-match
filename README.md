@@ -6,7 +6,7 @@ pattern (e.g. image/jpeg matches image/jpeg OR image/*).
 
 [![NPM](https://nodei.co/npm/mime-match.png)](https://nodei.co/npm/mime-match/)
 
-[![Build Status](https://img.shields.io/travis/DamonOehlman/mime-match.svg?branch=master)](https://travis-ci.org/DamonOehlman/mime-match)
+[![Build Status](https://api.travis-ci.org/DamonOehlman/mime-match.svg?branch=master)](https://travis-ci.org/DamonOehlman/mime-match) [![bitHound Score](https://www.bithound.io/github/DamonOehlman/mime-match/badges/score.svg)](https://www.bithound.io/github/DamonOehlman/mime-match) 
 
 ## Example Usage
 
@@ -28,13 +28,14 @@ console.log(['application/*', 'image/*'].filter(match('image/jpeg')));
 // charset suffix is ignored
 console.log(match('application/json', 'application/json; charset=utf-8'));
 // --> true
+
 ```
 
 ## License(s)
 
 ### ISC
 
-Copyright (c) 2015, Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2016, Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
