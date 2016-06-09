@@ -20,5 +20,5 @@ module.exports = function(target, pattern) {
     return result && result.length >= 2;
   }
 
-  return pattern ? test(pattern) : test;
+  return pattern ? test(pattern.split(';')[0]) : test;
 };

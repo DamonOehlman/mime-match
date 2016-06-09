@@ -1,6 +1,6 @@
 {
   "name": "mime-match",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple function to check whether a mimetype matches the specified mimetype (with wildcard support)",
   "main": "index.js",
   "scripts": {
